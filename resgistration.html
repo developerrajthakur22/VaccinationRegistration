@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap" rel="stylesheet">
+    <title>Registration</title>
+    <link rel="stylesheet" href="resgistration.css">
+</head>
+<body>
+    <div>
+    <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+    <h1>Registration Form</h1>
+    <hr>
+    <form action="">
+        <p>ID- <input type="text" id="uniqueID"></p>
+        <p>Name- <input type="text" id="name"></p>
+        <p>Age- <input type="number" id="age" min="18" max="40"></p>
+        <p>Designation- <input type="radio" id="emp" value="Employee">Employee <input type="radio" id="student" value="student">Student  </p>
+        <p>Priority:
+        <select id="priority">
+            <option value="p0">p0</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+        </select>
+        </p>
+        <p>Vaccine:
+            <select id="vaccine">
+                <option value="covishield">Covishield</option>
+                <option value="Covaxine">Covaxine</option>
+                <option value="Sputnik">Sputnik</option>
+            </select>
+        </p>
+        <button type="submit">Register</button>
+    </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>
